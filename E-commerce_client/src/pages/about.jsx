@@ -1,7 +1,5 @@
-import React from 'react'
+import { Header } from "../components/header";
 
 export const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <Header>About</Header>;
+};

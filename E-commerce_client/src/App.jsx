@@ -1,16 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Home } from "./pages/home";
 import { About } from "./pages/about";
+import { Cart } from "./pages/cart";
+import { Home } from "./pages/home";
+import { Login } from "./pages/login";
+import { Register } from "./pages/register";
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold  underline  container">Hello world!</h1>
-      <button className="btn btn-success">Click Me</button>
-
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Register" element={<Register />} />{" "}
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Cart" element={<Cart />} />
       </Routes>
     </>
   );
